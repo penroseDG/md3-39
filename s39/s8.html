@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: white;
+        }
+        .container {
+            background-color: #3a3b3c;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+        }
+        .title {
+            font-size: 2em;
+        }
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+        .input-group input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Weight Converter</div>
+        <div class="input-group">
+            <input type="number" id="pounds" oninput="convert('pounds')" placeholder="Pounds">
+            <input type="number" id="kilograms" oninput="convert('kilograms')" placeholder="Kilograms">
+        </div>
+        <div class="input-group">
+            <input type="number" id="ounces" oninput="convert('ounces')" placeholder="Ounces">
+            <input type="number" id="grams" oninput="convert('grams')" placeholder="Grams">
+        </div>
+        <div class="input-group">
+            <input type="number" id="stones" oninput="convert('stones')" placeholder="Stones">
+        </div>
+    </div>
+    <script src="s8.js"></script>
+</body>
+</html>

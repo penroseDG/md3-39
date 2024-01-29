@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: white;
+        }
+        .container {
+            background-color: #3a3b3c;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+        }
+        .title {
+            font-size: 2em;
+        }
+        .input-group {
+            margin: 10px 0;
+        }
+        .input-group input {
+            margin-right: 10px;
+        }
+        table {
+            width: 100%;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Name Search</div>
+        <input type="text" id="search" oninput="filterTable()" placeholder="Search for names..">
+        <table id="myTable">
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+            </tr>
+            <!-- Add your data rows here -->
+        </table>
+    </div>
+   <script src="s9.js"></script>
+</body>
+</html>

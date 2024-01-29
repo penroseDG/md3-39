@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: white;
+        }
+        .title {
+            color: blue;
+            font-size: 2em;
+        }
+        .goal {
+            color: blue;
+            font-size: 1.5em;
+        }
+        .water-bottle {
+            height: 200px;
+            width: 100px;
+            border: 2px solid blue;
+            margin: auto;
+            position: relative;
+            background-color: white;
+        }
+        .water-level {
+            position: absolute;
+            bottom: 0;
+            height: 50%;
+            width: 100%;
+            background-color: blue;
+        }
+        .button {
+            margin: 10px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Drink Water</div>
+    <div class="goal">Goal: 2 Liters</div>
+    <div class="water-bottle">
+        <div class="water-level" id="waterLevel"></div>
+    </div>
+    <div id="smallGlasses">
+    </div>
+  <script src="s6.js"></script>
+</body>
+</html>
